@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio 2 | sidebar</title>
     <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
     <div class="container">
@@ -27,7 +29,7 @@
                 <div class="hero-left">
                     <h4>Hello, I'm</h4>
                     <h1>Laizu <br><span>Akram</span></h1>
-                    <p>A Passionate Web Developer <br>
+                    <p>A Passionate <span id="tittle-typing"></span> <br>
                         From Bangladesh</p>
                     
                     <div class="social-icons">
@@ -35,18 +37,18 @@
                            <a href="#"><button>Contact Me</button></a> 
                         </div>
                         <div class="icons">
-                            <a href="#"><img src="./images/social-icons/facebook.png" alt="social-icons"></a>
-                            <a href="#"><img src="./images/social-icons/instagram.png" alt="social-icons"></a>
-                            <a href="#"><img src="./images/social-icons/social.png" alt="social-icons"></a>
-                            <a href="#"><img src="./images/social-icons/twitter.png" alt="social-icons"></a>
-                            <a href="#"><img src="./images/social-icons/youtube.png" alt="social-icons"></a>
+                            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-github' ></i></a>
+                            <a href="#"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#"><i class='bx bxl-meta' ></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="hero-right">
-                    <div class="rotate-box">
-                        <img src="./images/hero_main_image.png" alt="">
-                    </div>
+
+                    <img src="./images/hero_main_image.png" alt="">
+
                     <div class="card">
                         <p>5k<sup>+</sup></p>
                         <h4>Total <br> Projects</h4>
@@ -61,26 +63,26 @@
 
             <!--------- welcome to my world start here ---------->
             <div class="welcome">
-                <h2>Welcome to my World</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Nulla vitae, ex soluta aut impedit voluptate eum iusto laudantium fugiat nemo.</p>
+                <h2><i class='bx bxs-right-down-arrow-circle'></i> Welcome to my World <i class='bx bxs-right-down-arrow-circle bx-rotate-90' ></i></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> impedit voluptate eum iusto laudantium fugiat nemo.</p>
 
                 <div class="welcome-cards">
                     <div class="welcome-card-single">
                         <!-- icons -->
                         <img src="./images/social-icons/social.png" alt="icons">
-                        <h2>Creativity</h2>
+                        <h2>Problem Solving</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum!</p>
                     </div>
                     <div class="welcome-card-single">
                         <!-- icons -->
                         <img  src="./images/social-icons/social.png" alt="icons">
-                        <h2>Creativity</h2>
+                        <h2>Mangeable Code</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum!</p>
                     </div>
                     <div class="welcome-card-single">
                         <!-- icons -->
                         <img src="./images/social-icons/social.png" alt="icons">
-                        <h2>Creativity</h2>
+                        <h2>Functionality</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum!</p>
                     </div>
                 </div>
@@ -137,22 +139,34 @@
                     </div>
                     <div class="skills-right">
                         <div class="progress-list">
-                            <div class="progress">
-                                <p>HTML</p>
-                                <div><span>96%</span></div>
+                            <h4>HTML</h4>
+                            <div class="progress-bar">
+                                <div class="html">
+                                    <span>86%</span>
+                                </div>
                             </div>
-                            <div class="progress">
-                                <p>CSS</p>
-                                <div><span>78%</span></div>
+
+                            <h4>CSS</h4>
+                            <div class="progress-bar">
+                                <div class="css">
+                                    <span>86%</span>
+                                </div>
                             </div>
-                            <div class="progress">
-                                <p>JavaScript</p>
-                                <div><span>82%</span></div>
+
+                            <h4>JavaScript</h4>
+                            <div class="progress-bar">
+                                <div class="js">
+                                    <span>86%</span>
+                                </div>
                             </div>
-                            <div class="progress">
-                                <p>React JS</p>
-                                <div><span>68%</span></div>
+
+                            <h4>React JS</h4>
+                            <div class="progress-bar">
+                                <div class="react">
+                                    <span>86%</span>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -161,5 +175,10 @@
             
         </main>
     </div>
+
+
+
+   
+    <script src="./main.js"></script>
 </body>
 </html>
