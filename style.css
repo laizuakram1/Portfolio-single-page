@@ -405,8 +405,8 @@ main{
     margin: 10px 0 20px 0;
 }
 .progress-bar div{
-    width:100%;
-    height:10px;
+    width:0%;
+    height:8px;
     border-radius:5px;
 }
 .progress-bar div span{
@@ -434,7 +434,7 @@ main{
 }
 .js{
     background-color: #fdfc74;
-    animation: javascript 1s linear forwards;
+    animation: js 1s linear forwards;
 }
 .react{
     background-color: #61DBFB;
@@ -453,9 +453,110 @@ main{
     border: 1px solid #61DBFB;
 }
 
-
-
-
-
+/* progress animation */
+@keyframes html {
+    100%{
+        width: 92%;
+    }
+}
+@keyframes css {
+    100%{
+        width: 86%;
+    }
+}
+@keyframes js {
+    100%{
+        width: 78%;
+    }
+}
+@keyframes react {
+    100%{
+        width: 67%;
+    }
+}
 
 /* skills sections style end here */
+
+/* portfolio css start here */
+.portfolio{
+    width: 100%;
+    position: relative;
+    padding: 100px 10px;
+   
+    
+}
+.portfolio > h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: -1px;
+}
+.portfolio > p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#615978;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tabs_box{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+    
+}
+
+.tabs_box > button{
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    padding: 10px 30px;
+    border: 1px solid #bdb9cb;
+    border-radius: 5px;
+    color:#615978;
+    cursor: pointer;
+
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.content_box .content{
+    display: none;
+}
+.content_box .content .active{
+    display: block;
+}
+
+.content > h2{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+}
+.projects > img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* portfolio css end here */

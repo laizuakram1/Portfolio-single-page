@@ -92,9 +92,8 @@
             <!-----About me--- start here--->
             <div class="about-me">
                 <div class="about-left">
-                    <img class="img-1" src="./images/about-image-2.png" alt="">
+                    <img class="img-1" src="./images/about-1.png" alt="">
                     <img class="img-2" src="./images/about-image-2 (1).png" alt="">
-                    <img class="img-3" src="./images/hero-element-7.png" alt="">
                     
                 </div>
                 <div class="about-right">
@@ -142,7 +141,7 @@
                             <h4>HTML</h4>
                             <div class="progress-bar">
                                 <div class="html">
-                                    <span>86%</span>
+                                    <span>92%</span>
                                 </div>
                             </div>
 
@@ -156,14 +155,14 @@
                             <h4>JavaScript</h4>
                             <div class="progress-bar">
                                 <div class="js">
-                                    <span>86%</span>
+                                    <span>78%</span>
                                 </div>
                             </div>
 
                             <h4>React JS</h4>
                             <div class="progress-bar">
                                 <div class="react">
-                                    <span>86%</span>
+                                    <span>67%</span>
                                 </div>
                             </div>
                             
@@ -172,6 +171,51 @@
                 </div>
             </div>
             <!-- skills section end here -->
+
+            <!-------portfolio start here------->
+            <div id="portfolio" class="portfolio">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Recusandae minima alias maxime minus molestiae .</p>
+
+                <div class="tabs_container">
+                    <div class="tabs_box">
+                        <button class="tab_btn">All</button>
+                        <button class="tab_btn">Frontend</button>
+                        <button class="tab_btn">Fullstack</button>
+                        
+                    </div>
+                    <div class="content_box">
+                        <div class="content">
+                            <h2>All Portfolio Projects</h2>
+                            <div class="projects">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="content">
+                            <h2>Frontend Projects</h2>
+                            <div class="projects">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="content">
+                            <h2>Fullstack Projects</h2>
+                            <div class="projects">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                                <img src="./images/portfolio-item-01.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------portfolio end here------->
             
         </main>
     </div>
@@ -179,6 +223,24 @@
 
 
    
+
+
+
+    <script>
+        let tabs = document.querySelectorAll('.tab_btn');
+        let all_content = document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index)=>{
+            tab.addEventListener('click',() =>{
+                tabs.forEach((tab) =>{tab.classList.remove('active')});
+                tab.classList.add('active');
+
+                all_content.forEach((content) =>{content.classList.remove('active')});
+                all_content[index].classList.add('active');
+            })
+
+        })
+    </script>
     <script src="./main.js"></script>
 </body>
 </html>
