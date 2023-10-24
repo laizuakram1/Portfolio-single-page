@@ -481,7 +481,7 @@ main{
 .portfolio{
     width: 100%;
     position: relative;
-    padding: 100px 10px;
+    padding: 60px 10px;
    
     
 }
@@ -514,7 +514,7 @@ main{
 }
 
 .tabs_box > button{
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 16px;
     font-weight: 500;
     background: transparent;
@@ -534,10 +534,13 @@ main{
 .content_box .content{
     display: none;
 }
-.content_box .content .active{
+.content_box .content.active{
     display: block;
 }
-
+.tab_btn.active{
+    background-color:tomato;
+    color: #fff;
+}
 .content > h2{
     font-size: 24px;
     font-weight: 600;
@@ -550,13 +553,74 @@ main{
 
 }
 
-
-
-
-
-
-
-
-
-
 /* portfolio css end here */
+
+
+
+/* work with me css start here */
+.work-with-me{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    
+}
+.work-left{
+    width: 60%;
+    
+}
+.work-left img{
+    width: 100%;
+    padding-right: 80px;
+}
+.work-right{
+    width: 40%; 
+}
+.work-right > h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: tomato;
+}
+.work-right > h1{
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    color: #000;
+}
+.work-right > p{
+    font-size: 18px;
+    color: #615978;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+}
+.support{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.support i{
+    font-size: 30px;
+    color: #fff;
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 20px;
+}
+.support div> h2{
+    font-size: 22px;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 5px;
+
+}
+.support div> p{
+    font-size: 18px;
+    color: #615978;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+/* work with me css end here */
