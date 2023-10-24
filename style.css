@@ -651,7 +651,7 @@ main{
     font-size: 18px;
     color:#bdb9cb;
     letter-spacing: 0.5px;
-    padding: 30px 0 40px 0;
+    padding: 30px 0 80px 0;
 }
 .service-container{
     width: 100%;
@@ -668,7 +668,7 @@ main{
     border: 1px solid #615978;
     margin-bottom:40px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 .service:hover{
     background: #fff;
@@ -705,3 +705,78 @@ main{
     text-align: justify;
 }
     /* services css end here */
+
+
+    /* blog css start here */
+    .blogs{
+        width: 100%;
+        padding: 80px 10px;
+        text-align: center;
+    }
+    .blogs > h2{
+        font-size: 24px;
+        font-weight:900px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .blogs > p{
+        font-size: 20px;
+        font-weight: 400;
+        color:#bdb9cb;
+        letter-spacing: 1px;
+        padding: 20px 0;
+    }
+    .blogs-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .blog-left{
+        width: 50%;
+        position: relative;
+    }
+    .blog-left img{
+        width: 100%;
+        border-radius: 8px;
+        filter: brightness(80%);
+        
+    }
+    .blog-right{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
+        
+    }
+    .blog{
+        width: 240px;
+        height: 220px;
+        background: transparent;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .blog span{
+        font-size: 16px;
+        color:#bdb9cb;
+    }
+    .blog > h3{
+        font-size: 20px;
+        font-weight: 600;
+        color:#000;
+        padding: 10px 0 50px 0;
+    }
+    .blog-feature{
+        position: absolute;
+        color: #fff;
+        text-align: left;
+        padding: 0 50px;
+        bottom: 50px;
+    }
+
+
+    /* blog css end here */
