@@ -735,12 +735,31 @@ main{
     .blog-left{
         width: 50%;
         position: relative;
+
+    }
+    .blog-left:hover img{
+        filter: brightness(40%);
     }
     .blog-left img{
         width: 100%;
         border-radius: 8px;
-        filter: brightness(80%);
+        filter: brightness(70%);
+        transition: all 0.5s ease-in-out;
         
+    }
+    .blog-feature{
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    .blog-feature > span{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    .blog-feature > h1:hover{
+        color: tomato;
+    }
+    .feature-span-2:hover{
+        color: tomato;
     }
     .blog-right{
         width: 50%;
@@ -780,3 +799,116 @@ main{
 
 
     /* blog css end here */
+
+    /* get in touch css start here */
+    .get-in-touch{
+        width: 100%;
+        padding: 80px 10px;
+        text-align: center;
+    }
+    .get-in-touch > h2{
+        font-size: 24px;
+        font-weight:900px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .get-in-touch > p{
+        font-size: 20px;
+        font-weight: 400;
+        color:#bdb9cb;
+        letter-spacing: 1px;
+        padding: 20px 0;
+    }
+    .address-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        padding: 40px 0;
+    }
+    .address{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div > i{
+        font-size: 28px;
+        color: #fff;
+        background-color: tomato;
+        border-radius: 50%;
+        padding: 15px;
+        margin-right: 15px;
+    }
+    .address div > h2{
+        color: #000;
+    }
+    .address div > p{
+        color: #333;
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin-top: 7px;
+    }
+    .location{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .google-map{
+        width: 50%;
+    }
+    .google-map > iframe{
+        width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+    }
+   .message{
+        width: 50%;
+        text-align: left;
+    }
+    .message > h1{
+        font-size: 34px;
+        font-weight: 800;
+        color: #000;
+        margin-bottom: 30px;
+
+    }
+    form > input{
+        width: 48%; 
+        height: 50px; 
+        font-size: 18px;
+        border: 1px solid #ddd;
+        outline: none;
+        border-radius: 7px;
+        padding: 20px;
+        margin: 0 5px 20px 0;
+        color: #000;
+    }
+    input::placeholder{
+        font-size: 16px;
+        color: #000;
+    } 
+    form >.submit-btn{
+        width: 40%;
+        background-color: tomato;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    form > textarea{
+        width: 98%;
+        padding: 20px;
+        border: 1px solid #ddd;
+        outline: none;
+        border-radius: 7px;
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    form > textarea::placeholder{
+        font-size: 16px;
+        color: #000;
+
+    }
+    /* get in touch css end here*/
