@@ -858,7 +858,7 @@ main{
     }
     .google-map > iframe{
         width: 100%;
-        padding: 30px;
+        padding: 40px;
         border-radius: 15px;
     }
    .message{
@@ -912,3 +912,60 @@ main{
 
     }
     /* get in touch css end here*/
+
+
+    /* footer css start here */
+    .footer{
+        width: 100%;
+        padding: 60px 10px;
+        background: url(./images/footer-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        position: relative;
+    }
+    .footer-container p{
+        font-size: 18px;
+        color:#bdb9cb;
+        letter-spacing: 0.5px;
+        padding: 40px 0;
+    }
+    .footer-icons i{
+        font-size: 30px;
+        background-color: transparent;
+        margin-right: 12px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+    .footer-icons i:hover{
+        color: tomato;
+        transform: translateY(-10px);
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color:#bdb9cb;
+       margin-top: 80px;
+    }
+    .terms a{
+        color:#bdb9cb;
+        font-size: 16px;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    .shift-btn{
+        position: absolute;
+        top: -30px;
+        right: 0;
+        
+    }
+    .shift-btn a > i{
+        font-size: 42px;
+        background-color: tomato;
+        color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    /* footer css end here */
