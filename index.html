@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio 2 | sidebar</title>
     <link rel="stylesheet" href="./style.css">
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -26,7 +28,7 @@
             </nav>
         </aside>
         <main>
-            <div class="hero">
+            <div id="home" class="hero">
                 <div class="hero-left">
                     <h4>Hello, I'm</h4>
                     <h1>Laizu <br><span>Akram</span></h1>
@@ -139,14 +141,14 @@
                     </div>
                     <div class="skills-right">
                         <div class="progress-list">
-                            <h4>HTML</h4>
+                            <h4>HTML 5</h4>
                             <div class="progress-bar">
                                 <div class="html">
                                     <span>92%</span>
                                 </div>
                             </div>
 
-                            <h4>CSS</h4>
+                            <h4>CSS 3</h4>
                             <div class="progress-bar">
                                 <div class="css">
                                     <span>86%</span>
@@ -301,6 +303,99 @@
             </div>
             <!------work with me end here----->
 
+            <!--------Testmonial start here-->
+           <div id="testmonial" class="testmonial">
+            <h2>Testmonials</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Aut deleniti illum eveniet ducimus suscipit pariatur?</p>
+
+            <div class="slide-container">
+                <swiper-container class="mySwiper" pagination="true"pagination-clickable="true"space-between="30"slides-per-view="3">
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>SEO Expert</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>AI Expert</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>Programmer</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>Fullstack Developer</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>Frontend Developer</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum corrupti quia eligendi quae cum?</p>
+                        <div class="review">
+                            <img src="./images/testimonial-author-1.jpg" alt="review-image">
+                            <div>
+                                <h4>Mohammad</h4>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    
+                  
+               
+                   
+                    
+                
+                    
+                
+                    
+                </swiper-container>
+            </div>
+            
+           </div>
+
+            <!--------Testmonial end here-->
+
             <!---Blog start here-->
             <div id="blogs" class="blogs">
                 <h2>From My Blogs</h2>
@@ -413,10 +508,13 @@
                 </div>
 
                 <div class="shift-btn">
-                    <a href="#"><i class='bx bx-upload'></i></a>
+                    <a href="#home"><i class='bx bx-upload'></i></a>
                 </div>
             </div>
             <!----Footer section start here-->
+
+
+             
             
         </main>
     </div>
@@ -427,7 +525,7 @@
 
 
     
-    <script>
+    <!-- <script>
         let tabs = document.querySelectorAll('.tab_btn');
         let all_content = document.querySelectorAll('.content');
 
@@ -441,7 +539,9 @@
             })
 
         })
-    </script>
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

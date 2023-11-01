@@ -5,12 +5,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: #615978;
+    
 }
 
 .container{
@@ -64,7 +66,7 @@ main{
     width: 100%;
     margin-left: 190px;
     scroll-behavior:smooth;
-    
+   
     
 }
 .hero{
@@ -579,7 +581,8 @@ main{
     padding-right: 80px;
 }
 .work-right{
-    width: 40%; 
+    width: 40%;
+    padding-top: 100px; 
 }
 .work-right > h2{
     font-size: 20px;
@@ -706,6 +709,75 @@ main{
 }
     /* services css end here */
 
+    /* testmonial css start here */
+    .testmonial{
+        background-image: url(./images/testimonial-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        padding: 90px 0;
+    }
+    .testmonial > h2{
+        font-size: 28px;
+        font-weight: 700px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+    .testmonial > p{
+        font-size: 18px;
+        font-weight: 400px;
+        letter-spacing: 1px;
+        color:#bdb9cb;
+    }
+    .slide-container{
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 10px;
+    }
+    swiper-slide{
+        width: 300px !important;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+        border-radius: 7px;
+    }
+    .swiper-pagination{
+        position: absolute;
+        bottom: -80px;
+    }
+    .review{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 30px;
+    }
+    .review img{
+        border-radius: 50%;
+        padding: 15px 15px;
+    }
+    .review div > h4{
+        font-size: 20px;
+        color: #000;
+        font-weight: 900;
+
+    }
+    .review div > p{
+        font-size: 16px;
+        color:#9f9ab0;
+        
+
+    }
+    /* testmonial css end here */
 
     /* blog css start here */
     .blogs{
@@ -957,12 +1029,12 @@ main{
     }
     .shift-btn{
         position: absolute;
-        top: -30px;
-        right: 0;
+        top: -25px;
+        right: 10px;
         
     }
     .shift-btn a > i{
-        font-size: 42px;
+        font-size: 32px;
         background-color: tomato;
         color: #fff;
         border-radius: 50%;
