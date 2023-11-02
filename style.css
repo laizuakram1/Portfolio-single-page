@@ -177,8 +177,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    left: -30px;
-    top: 50px;
+    left: -50px;
+    top: 30px;
 }
 .card p{
     font-size: 36px;
@@ -221,7 +221,7 @@ main{
 
 .hero-right img{
     width: 350px;
-    height: 400px;
+    height: 450px;
 }
 
 /* welcome section style start here */
@@ -266,9 +266,9 @@ main{
     border-radius: 8px;
     padding: 60px 40px;
 }
-.welcome-card-single img{
-    width: 40px;
-    height: 40px;
+.welcome-card-single > i{
+    font-size: 40px;
+    color: tomato;
 }
 .welcome-card-single> h2{
     font-size:28px;
@@ -292,20 +292,24 @@ main{
     align-items: center;
     justify-content: space-between;
     position: relative;
+   
 }
 .about-left{
     width: 50%;
 }
 .about-left .img-1{
     width: 50%;
+    height: 90%;
     padding: 80px 70px;
     position: absolute;
     top: 0;
 }
 .about-left .img-2{
     width: 25%;
+    height: 45%;
     left: 10px;
-    top: 400px;
+    top:350px;
+    border-radius: 5px;
     position: absolute;
 }
 .about-right{
@@ -341,7 +345,8 @@ main{
     outline: none;
     text-transform: uppercase;
     margin-top: 40px;
-    transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 
 }
 .about-right a > button:hover{
