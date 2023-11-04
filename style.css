@@ -61,7 +61,7 @@ aside{
     z-index: 2;
     text-align: right;
     border-radius: 6px;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.3s linear;
 }
 .toggle-height{
     height: 400px;
@@ -118,7 +118,7 @@ nav a:hover{
     width: 30px;
 }
 main{
-    width: 100%;
+    max-width: 100%;
     margin-left: 190px;
     scroll-behavior:smooth;
    
