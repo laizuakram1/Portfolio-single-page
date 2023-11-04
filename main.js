@@ -50,3 +50,17 @@ var typed = new Typed('#tittle-typing', {
       },
     });
     swiperEl.initialize();
+
+
+    // navbar toggle
+    let toggleList = document.getElementById('toggle-list');
+    let toggleBtn = document.getElementById('toggle-btn');
+    
+    
+
+    function showNav(){
+      toggleList.classList.toggle('toggle-height');
+
+    }
+
+   

@@ -28,6 +28,49 @@ aside{
     background-color: #000;
     position: fixed;
 }
+.toggle-nav{
+    display: none;
+   
+}
+.toggle-nav-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.toggle-nav-container i{
+    font-size: 40px;
+    background: transparent;
+}
+.toggle-nav-container > .logo i{
+    color: tomato;
+    font-size: 100px;
+}
+.toggle-list{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    z-index: 2;
+    text-align: right;
+    border-radius: 6px;
+    transition: height 0.5s ease-in-out;
+}
+.toggle-height{
+    height: 400px;
+}
+.toggle-list nav > a{
+    color: #fff;
+    font-size: 22px;
+}
+
 .logo{
    width: 150px;
    padding: 10px;
