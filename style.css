@@ -12,6 +12,7 @@ body{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: #615978;
+    overflow-x: hidden;
     
 }
 
@@ -83,7 +84,7 @@ main{
 .hero{
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 40px;
     background: url(./images/hero-bg.jpg);
@@ -162,6 +163,7 @@ main{
     align-items: center;
     justify-content: center;
     position: relative;
+    right: 50px;
 }
 
 .card{
@@ -175,7 +177,7 @@ main{
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     left: -50px;
     top: 30px;
 }
@@ -201,7 +203,7 @@ main{
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     right: -40px;
     bottom: 40px;
 }
@@ -258,12 +260,28 @@ main{
     margin-top: 80px;
 }
 .welcome-card-single{
-    background-color: transparent;
+    background-color: #fff;
     max-width: 320px;
-    height: 320px;
+    height: 350px;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 60px 40px;
+    position: relative;
+    
+}
+.welcome-card-single:hover .welcome-card-layer{
+    background-color: tomato;
+    transform: rotate(5deg);
+}
+.welcome-card-layer{
+    width: 320px;
+    height: 350px;
+    border-radius: 7px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -100;
+    transition: 0.3s;
 }
 .welcome-card-single > i{
     font-size: 40px;
@@ -275,7 +293,7 @@ main{
     color: #000;
     padding: 20px 0;
 }
-.welcome-card-signle> p{
+.welcome-card-single> p{
     font-size: 18px;
     letter-spacing: 1px;
     text-align: left;
@@ -971,7 +989,7 @@ main{
     .address{
         display: flex;
         align-items: center;
-        justify-content: center;
+        
     }
     .address > div > i{
         font-size: 28px;

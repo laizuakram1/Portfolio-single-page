@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laizu | Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -30,7 +31,7 @@
         </aside>
         <main>
             <div id="home" class="hero">
-                <div class="hero-left">
+                <div class="hero-left" data-aos="fade-down" data-aos-duration="1000">
                     <h4>Hello, I'm</h4>
                     <h1>Laizu <br><span>Akram</span></h1>
                     <p>A Passionate <span id="tittle-typing"></span> <br>
@@ -49,17 +50,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-right">
+                <div class="hero-right" data-aos="flip-left" data-aos-duration="1000">
 
                     <img src="./images/hero 3.jpg" alt="">
 
                     <div class="card">
                         <p>5k<sup>+</sup></p>
-                        <h4>Total <br> Projects</h4>
+                        <h4>Hour <br> Works</h4>
                     </div>
                     <div class="card-2">
-                        <p>200<sup>+</sup></p>
-                        <h4>Worlwide <br> Clients</h4>
+                        <p>20<sup>+</sup></p>
+                        <h4>Industry <br> Projects</h4>
                     </div>
                     
                 </div>
@@ -67,31 +68,38 @@
 
             <!--------- welcome to my world start here ---------->
             <div class="welcome">
-                <h2><i class='bx bxs-right-down-arrow-circle'></i> Welcome to my World <i class='bx bxs-right-down-arrow-circle bx-rotate-90' ></i></h2>
+                <h2 data-aos="flip-right"data-aos-duration="1000"><i class='bx bxs-right-down-arrow-circle'></i> Welcome to my World <i class='bx bxs-right-down-arrow-circle bx-rotate-90' ></i></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> impedit voluptate eum iusto laudantium fugiat nemo.</p>
 
                 <div class="welcome-cards">
                     <div class="welcome-card-single" 
-                    data-aos="fade-left"
+                    data-aos="fade-down"
                     data-aos-duration="1000"
                     >
                         <!-- icons -->
                         <i class='bx bxl-graphql'></i>
                         <h2>Problem Solving</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum!</p>
+
+                        <div class="welcome-card-layer"></div>
                     </div>
-                    <div class="welcome-card-single" data-aos="fade-up">
+                    <div class="welcome-card-single" data-aos="fade-up" data-aos-duration="1000">
                         <!-- icons -->
                         <i class='bx bx-layer'></i>
                         <h2>Mangeable Code</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum!</p>
+
+                        <div class="welcome-card-layer"></div>
                     </div>
-                    <div class="welcome-card-single" data-aos="zoom-in-left">
+                    <div class="welcome-card-single" data-aos="fade-up" data-aos-duration="1000">
                         <!-- icons -->
                         <i class='bx bxs-bug' ></i>
                         <h2>Bug Fixing</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum!</p>
+
+                        <div class="welcome-card-layer"></div>
                     </div>
+                    
                 </div>
             </div>
             <!-----------welcome to my world end here------------->
@@ -206,7 +214,7 @@
 
             <!-------portfolio start here------->
             <div id="portfolio" class="portfolio">
-                <h2><i class='bx bxs-right-down-arrow-circle'></i> Portfolio <i class='bx bxs-left-down-arrow-circle'></i></h2>
+                <h2 data-aos="flip-right"data-aos-duration="1000"><i class='bx bxs-right-down-arrow-circle'></i> Portfolio <i class='bx bxs-left-down-arrow-circle'></i></h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Recusandae minima alias maxime minus molestiae .</p>
 
                 <div class="tabs_container">
@@ -373,7 +381,7 @@
 
             <!-------service section start here-------->
             <div id="services" class="services">
-                <h2><i class='bx bxs-right-down-arrow-circle'></i> Services <i class='bx bxs-left-down-arrow-circle'></i></h2>
+                <h2 data-aos="flip-right"data-aos-duration="1000"><i class='bx bxs-right-down-arrow-circle'></i> Services <i class='bx bxs-left-down-arrow-circle'></i></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Esse incidunt aperiam minus sit voluptatum necessitatibus!</p>
                 <div class="service-container" >
                     <div class="service"
@@ -386,7 +394,7 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A deleniti dicta sit. Quia tempora, enim sint commodi dolore voluptatem dolorem.</p>
                     </div>
                     <div class="service"
-                    data-aos="slide-down"
+                    data-aos="fade-down"
                     data-aos-duration="1000"
                     >
                         <i class='bx bxs-coin-stack' ></i>
