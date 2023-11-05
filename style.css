@@ -504,20 +504,20 @@ main{
 }
 .html{
     background-color: #e34c26;
-    animation: html 1s linear forwards;
+    animation: html 2s linear forwards;
     
 }
 .css{
     background-color: #2965f1;
-    animation: css 1s linear forwards;
+    animation: css 2s linear forwards;
 }
 .js{
     background-color: #fdfc74;
-    animation: js 1s linear forwards;
+    animation: js 2s linear forwards;
 }
 .react{
     background-color: #61DBFB;
-    animation: react 1s linear forwards;
+    animation: react 2s linear forwards;
 }
 .html span{
     border: 1px solid #e34c26;
@@ -550,7 +550,7 @@ main{
 }
 @keyframes react {
     100%{
-        width: 67%;
+        width: 77%;
     }
 }
 
@@ -837,7 +837,7 @@ main{
     font-size: 18px;
     color:#bdb9cb;
     letter-spacing: 0.5px;
-    text-align: justify;
+    text-align: left;
 }
     /* services css end here */
 
@@ -1127,6 +1127,16 @@ main{
         background-repeat: no-repeat;
         text-align: center;
         position: relative;
+    }
+    .footer-container h1{
+        color: tomato;
+    }
+    .footer-container h1 > i{
+        font-size: 30px;
+        background-color: #ddd;
+        border-radius: 50%;
+        padding: 10px;
+        color: tomato;
     }
     .footer-container p{
         font-size: 18px;
